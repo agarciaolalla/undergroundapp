@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "742100987312",
+    "firebase_url": "https://undergroundapp-15825-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "undergroundapp-15825",
+    "storage_bucket": "undergroundapp-15825.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:742100987312:android:22652dc0f65a88eeeaba75",
+        "android_client_info": {
+          "package_name": "com.example.undergroundapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "742100987312-0t7cjos1n6uj1panaf12tllptdmmed0r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlIWPu8Jx4ZHEZT5gEx1LDmsSbiFeie-4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "742100987312-0t7cjos1n6uj1panaf12tllptdmmed0r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
