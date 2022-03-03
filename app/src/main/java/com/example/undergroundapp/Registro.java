@@ -50,7 +50,7 @@ public class Registro extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.registro);
 
-        getSupportActionBar().setTitle("Regístrate en O2"); //Indicamos el nombre de la página.
+        getSupportActionBar().setTitle("Registro"); //Indicamos el nombre de la página.
 
         //Inicializamos las variables con el xml
         etName = (EditText) findViewById(R.id.etName);

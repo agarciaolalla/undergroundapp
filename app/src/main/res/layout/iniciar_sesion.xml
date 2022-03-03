@@ -8,11 +8,8 @@
     android:orientation="vertical"
     tools:context=".IniciarSesion">
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="50dp" />
-
     <TextView
+        android:layout_marginTop="10dp"
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

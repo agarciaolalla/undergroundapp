@@ -44,7 +44,7 @@ public class IniciarSesion extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.iniciar_sesion);
 
-        getSupportActionBar().setTitle("UndergroundApp"); //Indicamos el nombre de la página.
+        getSupportActionBar().setTitle("UNDERGROUND-APP"); //Indicamos el nombre de la página.
 
         //Inicializo todas las variables para que no haya NullPointerException
         mail= "";
@@ -100,7 +100,7 @@ public class IniciarSesion extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
                 //En caso de que los datos sean correctos mediante el task.isSuccesful() te llevaría a la clase del menú principal.
                 if(task.isSuccessful()){
-                    Intent i = new Intent(IniciarSesion.this, MenuPrincipal.class);
+                    Intent i = new Intent(IniciarSesion.this, MenuFiestas.class);
                     //Mediante putExtra pasamos a la otra clase los datos del mail que hemos introducido al iniciar sesión
                     i.putExtra("mail", gMail);
                     i.putExtra("rol", gRol);

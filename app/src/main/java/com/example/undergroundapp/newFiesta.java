@@ -47,6 +47,9 @@ public class newFiesta extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.new_fiesta);
 
+        getSupportActionBar().setTitle("Añadir Fiesta");
+
+
         getMail = getIntent().getStringExtra("mail");
         getName = getIntent().getStringExtra("name");
         getPass = getIntent().getStringExtra("pass");
@@ -101,13 +104,21 @@ public class newFiesta extends AppCompatActivity {
 
                 mDatabase.child("Fiestas").push().setValue(map);
 
+                Intent i = new Intent(newFiesta.this, MenuFiestas.class);
+                i.putExtra("mail", getMail);
+                i.putExtra("rol", getRol);
+                i.putExtra("pass", getPass);
+                i.putExtra("name", getName);
+                startActivity(i);
+
             }
+
         });
 
         btVolver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(newFiesta.this, MenuPrincipal.class);
+                Intent i = new Intent(newFiesta.this, MenuFiestas.class);
                 i.putExtra("mail", getMail);
                 i.putExtra("rol", getRol);
                 i.putExtra("pass", getPass);

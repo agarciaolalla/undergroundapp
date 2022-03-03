@@ -70,7 +70,7 @@
         android:layout_marginRight="20dp"
         android:backgroundTint="#771C3B"
         android:fontFamily="@font/allerta_stencil"
-        android:text=" REGISTRAR COMO EMPRESA"
+        android:text=" REGISTRAR COMO usuario"
         android:textColor="#090909" />
 
     <Button
@@ -81,7 +81,7 @@
         android:layout_marginRight="20dp"
         android:backgroundTint="#361571"
         android:fontFamily="@font/allerta_stencil"
-        android:text=" REGISTRAR COMO USUARIO"
+        android:text=" REGISTRAR COMO empresa"
         android:textColor="#090909" />
 
     <Button

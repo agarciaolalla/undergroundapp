@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Undergroundapp">
         <activity
-            android:name=".MenuPrincipal"
+            android:name=".IniciarSesion"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,10 +20,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".Registro" />
-        <activity android:name=".IniciarSesion" />
-        <activity android:name=".Fiesta" />
-        <activity android:name=".Informacion" />
         <activity android:name=".MenuFiestas" />
+        <activity android:name=".Fiesta" />
         <activity android:name=".newFiesta" />
 
 
