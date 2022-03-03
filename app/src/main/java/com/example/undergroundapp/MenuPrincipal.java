@@ -55,7 +55,7 @@ public class MenuPrincipal extends AppCompatActivity {
         informacion = (View) findViewById(R.id.informacion);
         MostrarTiendas = (View) findViewById(R.id.añadir);
         mAuth = FirebaseAuth.getInstance();
-        Consumo = (View) findViewById(R.id.consumo);
+        Consumo = (View) findViewById(R.id.menuFiestas);
 
         //Guardamos valores pasados de la otra pantalla
         getMail = getIntent().getStringExtra("mail");
@@ -105,8 +105,8 @@ public class MenuPrincipal extends AppCompatActivity {
             finish();
             return true;
         }
-        if (id == R.id.consumo) {
-            Intent i = new Intent(MenuPrincipal.this, MenuConsumos.class);
+        if (id == R.id.menuFiestas) {
+            Intent i = new Intent(MenuPrincipal.this, MenuFiestas.class);
             i.putExtra("mail", getMail);//Te mete la variable del Mail para que en la otra clase la obtenga directamente
             i.putExtra("rol", getRol);
             i.putExtra("pass", getPass);

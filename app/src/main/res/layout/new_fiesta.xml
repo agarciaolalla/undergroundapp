@@ -10,7 +10,7 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="132dp"
+        android:layout_height="wrap_content"
         app:srcCompat="@mipmap/uground" />
 
 
@@ -43,8 +43,29 @@
         android:fontFamily="@font/allerta_stencil"
         android:text="Tipo de fiesta:"
         android:textSize="20sp" />
+
     <EditText
         android:id="@+id/tipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        android:fontFamily="@font/allerta_stencil"
+        android:text="Direccion:"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/tDireccion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"

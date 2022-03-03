@@ -13,9 +13,9 @@
             app:showAsAction="never" />
 
         <item
-            android:id="@+id/consumo"
-            android:title="Consumo"
-            android:orderInCategory="200"/>
+            android:id="@+id/menuFiestas"
+            android:orderInCategory="200"
+            android:title="Próximas Fiestas" />
         <item
             android:id="@+id/añadir"
             android:orderInCategory="200"

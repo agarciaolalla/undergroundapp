@@ -21,9 +21,9 @@
         </activity>
         <activity android:name=".Registro" />
         <activity android:name=".IniciarSesion" />
-        <activity android:name=".Consumo" />
+        <activity android:name=".Fiesta" />
         <activity android:name=".Informacion" />
-        <activity android:name=".MenuConsumos" />
+        <activity android:name=".MenuFiestas" />
         <activity android:name=".newFiesta" />
 
 
