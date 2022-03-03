@@ -44,7 +44,7 @@ public class IniciarSesion extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.iniciar_sesion);
 
-        getSupportActionBar().setTitle("O2"); //Indicamos el nombre de la página.
+        getSupportActionBar().setTitle("UndergroundApp"); //Indicamos el nombre de la página.
 
         //Inicializo todas las variables para que no haya NullPointerException
         mail= "";
@@ -67,9 +67,9 @@ public class IniciarSesion extends AppCompatActivity {
         bregistrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mail = etmail.getText().toString();
-                pass = etpass.getText().toString();
-                goMenu(mail);
+                Intent i = new Intent(IniciarSesion.this, Registro.class);
+                startActivity(i);
+                finish();
             }
 
         });
@@ -146,36 +146,7 @@ public class IniciarSesion extends AppCompatActivity {
 
     }
 
-    private void goMenu(String pMail) // Este método funciona igual que el anterior, pero únicamente te saca el dato "ROL" para ver si es administrador y que te permita pasar a la página de registro.
-    {
-        db.child("Users").addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot)
-            {
-                if(snapshot.exists())
-                {
-                    for(DataSnapshot ds: snapshot.getChildren()){
-                        String texto = ds.child("mail").getValue().toString();
-                        if (texto.equals(pMail)){
-                            checkRol = ds.child("rol").getValue().toString(); //Aqui comprueba el ROL
-                        }
-                    }
-                }
-                //Mediante este if , en caso de ser usuario avanzado te mandará a la página de registro, en caso contrario mostrará el mensaje citado.
-                if (checkRol.equals("avanzado")) {
-                    Intent i = new Intent(IniciarSesion.this, Registro.class);
-                    startActivity(i);
-                    finish();
-                } else {
-                    Toast.makeText(IniciarSesion.this, "No tienes permisos para realizar dicha acción", Toast.LENGTH_SHORT).show();
-                }
-            }
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-            }
-        });
 
-    }
 }
 
 

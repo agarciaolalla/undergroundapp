@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="@color/cardview_dark_background"
     android:orientation="vertical"
     tools:context=".IniciarSesion">
 
@@ -15,11 +15,20 @@
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
-        android:layout_height="59dp"
-        android:text="BIENVENIDO"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/allerta_stencil"
+        android:text=" UNDERGROUND PARTIES"
         android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="#000000"
         android:textSize="24sp" />
+
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="162dp"
+        app:srcCompat="@mipmap/uground" />
 
     <TextView
         android:id="@+id/textView"
@@ -27,6 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
+        android:fontFamily="@font/allerta_stencil"
         android:text="Correo:"
         android:textColor="#000000"
         android:textSize="24sp" />
@@ -46,6 +56,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
+        android:fontFamily="@font/allerta_stencil"
         android:text="Contraseña:"
         android:textColor="#020202"
         android:textSize="24sp" />
@@ -65,19 +76,24 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:backgroundTint="#F44336"
+        android:backgroundTint="#361571"
+        android:fontFamily="@font/allerta_stencil"
         android:text="Iniciar Sesion"
         android:textColor="#090909"
+
         app:iconTint="#F3F3F3" />
 
     <Button
         android:id="@+id/registrar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="40dp"
-        android:backgroundTint="#009688"
-        android:text="Registrar nuevo usuario"
-        android:textColor="#000000"
-        app:iconTint="#872020" />
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="#9C27B0"
+        android:fontFamily="@font/allerta_stencil"
+        android:text="Registrar"
+        android:textColor="#090909"
+
+        app:iconTint="#F3F3F3" />
 
 </LinearLayout>

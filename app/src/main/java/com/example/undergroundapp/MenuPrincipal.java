@@ -51,8 +51,6 @@ public class MenuPrincipal extends AppCompatActivity {
         getSupportActionBar().setTitle("O2"); //Indicamos el título de la página.
 
         share = findViewById(R.id.share);
-        myWebView = (WebView) findViewById(R.id.webView);
-        myWebView.loadUrl("https://o2online.es/");
         getSupportActionBar().setTitle("O2");
         getMail = "";
         getPass = "";

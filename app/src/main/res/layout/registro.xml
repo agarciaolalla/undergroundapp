@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
     android:orientation="vertical">
     <Space
         android:layout_width="match_parent"
@@ -12,6 +13,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Usuario:"
+        android:fontFamily="@font/allerta_stencil"
+
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:textSize="24sp" />
@@ -28,6 +31,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Correo:"
+        android:fontFamily="@font/allerta_stencil"
+
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:textSize="24sp" />
@@ -44,6 +49,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Contraseña:"
+        android:fontFamily="@font/allerta_stencil"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:textSize="24sp" />
@@ -62,8 +68,9 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:backgroundTint="#8BC34A"
-        android:text=" REGISTRAR USUARIO BASICO"
+        android:backgroundTint="#771C3B"
+        android:fontFamily="@font/allerta_stencil"
+        android:text=" REGISTRAR COMO EMPRESA"
         android:textColor="#090909" />
 
     <Button
@@ -72,18 +79,20 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:backgroundTint="#EA2618"
-        android:text=" REGISTRAR USUARIO ADMINISTRADOR"
+        android:backgroundTint="#361571"
+        android:fontFamily="@font/allerta_stencil"
+        android:text=" REGISTRAR COMO USUARIO"
         android:textColor="#090909" />
 
     <Button
         android:id="@+id/volver"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
+        android:layout_gravity="center"
         android:backgroundTint="#8BC34A"
         android:text="volver"
+        android:fontFamily="@font/allerta_stencil"
+
         android:textColor="#090909" />
 
 
