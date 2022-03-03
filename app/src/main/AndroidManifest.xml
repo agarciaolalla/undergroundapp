@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Undergroundapp">
         <activity
-            android:name=".IniciarSesion"
+            android:name=".MenuPrincipal"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,10 +20,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".Registro" />
-        <activity android:name=".MenuPrincipal" />
+        <activity android:name=".IniciarSesion" />
         <activity android:name=".Consumo" />
         <activity android:name=".Informacion" />
         <activity android:name=".MenuConsumos" />
+        <activity android:name=".newFiesta" />
+
 
         <meta-data
             android:name="preloaded_fonts"

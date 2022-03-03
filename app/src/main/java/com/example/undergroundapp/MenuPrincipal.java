@@ -7,20 +7,13 @@ import android.view.MenuItem;
 import android.view.View;
 import android.webkit.WebView;
 import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
-
-import java.util.ArrayList;
 
 public class MenuPrincipal extends AppCompatActivity {
 
@@ -60,7 +53,7 @@ public class MenuPrincipal extends AppCompatActivity {
         //Instanciamos firebase & variables
         Cerrarsesion = (View) findViewById(R.id.Cerrarsesion);
         informacion = (View) findViewById(R.id.informacion);
-        MostrarTiendas = (View) findViewById(R.id.MostrarTiendas);
+        MostrarTiendas = (View) findViewById(R.id.añadir);
         mAuth = FirebaseAuth.getInstance();
         Consumo = (View) findViewById(R.id.consumo);
 
@@ -122,8 +115,8 @@ public class MenuPrincipal extends AppCompatActivity {
             finish();
             return true;
         }
-        if (id == R.id.MostrarTiendas) {
-            Intent i = new Intent(MenuPrincipal.this,Registro.class);
+        if (id == R.id.añadir) {
+            Intent i = new Intent(MenuPrincipal.this, newFiesta.class);
             i.putExtra("mail", getMail);//Te mete la variable del Mail para que en la otra clase la obtenga directamente
             i.putExtra("rol", getRol);
             i.putExtra("pass", getPass);

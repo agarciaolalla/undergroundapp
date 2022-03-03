@@ -3,7 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/cardview_dark_background"
+    >
+
 
 
     <Button
@@ -11,8 +14,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:backgroundTint="#F44336"
-        android:text="volver al menu principal"
+        android:text="volver"
+        android:fontFamily="@font/allerta_stencil"
+        android:backgroundTint="#8BC34A"
         android:textColor="#000000" />
 
     <TextView
